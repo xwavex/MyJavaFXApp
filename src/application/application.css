@@ -1,0 +1,9 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+#rootpane {
+	-fx-background: #2a2a2a;/*rgb(46,52,54);*/
+}
+
+.drag-item {
+	-fx-border-color: #0056BC;
+	-fx-border-width: 2px;
+}

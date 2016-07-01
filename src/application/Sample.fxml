@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.control.TreeView?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ToolBar prefHeight="40.0" prefWidth="200.0">
+        <items>
+          <Button mnemonicParsing="false" onAction="#loadPackageButtonClicked" text="Load Package" />
+        </items>
+      </ToolBar>
+      <SplitPane dividerPositions="0.15769712140175218" prefHeight="200.0" prefWidth="227.0" VBox.vgrow="ALWAYS">
+         <items>
+            <TreeView fx:id="componenttree" prefHeight="200.0" prefWidth="200.0" />
+            <ScrollPane fx:id="rootpane">
+               <content>
+                  <StackPane fx:id="rootstackpane" prefHeight="150.0" prefWidth="200.0" />
+               </content></ScrollPane>
+         </items>
+      </SplitPane>
+   </children>
+</VBox>
